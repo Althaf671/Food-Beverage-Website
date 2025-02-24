@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="choose F&B payment">
+    <meta name="keywords" content="payment">
+    <link rel="stylesheet" href="/Style/payment.css">
+    <title>Payment</title>
+</head>
+
+<nav>
+    <div class="cart">
+        <div class="product-total">$0.00</div>
+        <div class="logo">
+            <img src="/Assets/shopping_cart_24dp_666666_FILL0_wght400_GRAD0_opsz24.svg" alt="shopping-logo" class="logo-img">
+        </div>
+    </div>
+
+    <ul>
+        <a href="/menu.html" class="navigation">Menu</a>
+        <a href="/payment.html" class="navigation">Payment</a>
+    </ul>
+</nav>
+
+<body>
+    <script src="/Script/payment.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            // Ambil total harga dari localStorage
+            const cartTotal = localStorage.getItem('cartTotal');
+    
+            // Tampilkan total harga di halaman pembayaran
+            const productTotalElement = document.querySelector('.product-total');
+            if (productTotalElement && cartTotal !== null) {
+                productTotalElement.textContent = `$${cartTotal}`;
+            } else {
+                productTotalElement.textContent = '$0.00'; // Default jika tidak ada data
+            }
+        });
+    </script>
+    
+    <div class="credit-card">
+        <div class="cc-img">
+            <img src="/Assets/credit-card-1369111_1280.png" class="images">
+        </div>
+        <h2>Bank ABC</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam laboriosam, delectus illum hic totam porro. </p>
+        <button onclick="" class="cc-button" >Card A</button>
+    </div>
+
+    <div class="credit-card">
+        <div class="cc-img">
+            <img src="/Assets/bank-1300155_1280.png" class="images">
+        </div>
+        <h2>Bank CBA</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam laboriosam, delectus illum hic totam porro. </p>
+        <button onclick="" class="cc-button" >Card B</button>
+    </div>
+
+    <div class="credit-card">
+        <div class="cc-img">
+            <img src="/Assets/credit-35165_1280.png" class="images">
+        </div>
+        <h2>Bank CAB</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam laboriosam, delectus illum hic totam porro. </p>
+        <button onclick="" class="cc-button" >Card C</button>
+    </div>
+    
+</body>
+
+<footer>
+    <p>&#169; 2024 F&B Company. All rights reserved.</p>
+</footer>
+</html>
