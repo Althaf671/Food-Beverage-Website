@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/menu.css">
+    <title>Menu</title>
+</head>
+
+<header>
+    <h1>Discover Our Tasty Offerings</h1>
+</header>
+
+<nav>
+    <div class="cart">
+        <div class="product-total">$0.00</div>
+        <div class="logo">
+            <img src="/Assets/shopping_cart_24dp_666666_FILL0_wght400_GRAD0_opsz24.svg" alt="shopping-logo" class="logo-img">
+        </div>
+    </div>
+
+    <ul>
+        <a href="/menu.html" class="navigation">Menu</a>
+        <a href="/payment.html" class="navigation">Payment</a>
+    </ul>
+</nav>
+
+<body>
+    <script src="/Script/menu.js"></script>
+    <div class="food" id="food">
+        <figure>
+            <img src="/Assets/burger-7422970_1280.jpg" alt="burger">
+            <figcaption>
+                <p class="food-name" data-price="1.99" data-id="1" data-category="snack">Burger</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    <p class="empty">$</p>
+                    </div>
+                <p class="desc">Juicy patty in a soft bun with toppings</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$1.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/fries-4601057_1280.jpg" alt="fries">
+            <figcaption>
+                <p class="food-name" data-price="1.99" data-id="1" data-category="snack">Fries</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="empty">$</p>
+                    <p class="empty">$</p>
+                    </div>
+                <p class="desc">Crispy, golden potato sticks</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$0.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/bread-1284438_1280.jpg" alt="croissant">
+            <figcaption>
+                <p class="food-name" data-price="1.99" data-id="1" data-category="snack">Croissant</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="empty">$</p>
+                    <p class="empty">$</p>
+                    </div>
+                <p class="desc">Fleaky, buttery, crescent-shaped pastry</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$0.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/taco-1018962_1280.jpg" alt="taco">
+            <figcaption>
+                <p class="food-name" data-price="1.99" data-id="1" data-category="snack">Taco</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    <p class="empty">$</p>
+                    </div>
+                <p class="desc">Crispy or soft tortilla filled with meat, veggies, and toppings</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$1.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/cheese-1869708_1280.jpg" alt="pizza">
+            <figcaption>
+                <p class="food-name" data-price="1.99" data-id="1" data-category="snack">Pizza</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    </div>
+                <p class="desc">Flatbread topped with sauce, cheese, and various toppings</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$2.99</p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="beverage">
+        <figure>
+            <img src="/Assets/iced-tea-7125271_1280.jpg" alt="iced-tea">
+            <figcaption>
+                <p class="beverage-name" data-price="1.99" data-id="1" data-category="snack">Iced Tea</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="empty">$</p>
+                    <p class="empty">$</p>
+                    </div>
+                <p class="desc">Chilled tea, often sweetened and served with ice</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$0.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/iced-coffee-7113044_1280.jpg" alt="iced-coffee">
+            <figcaption>
+                <p class="beverage-name" data-price="1.99" data-id="1" data-category="snack">Americano</p>
+                <div class="price-level">
+                    <p class="filled">$</p>
+                <p class="empty">$</p>
+                <p class="empty">$</p>
+                </div>
+                <p class="desc">Espresso diluted with hot water for a smooth, rich coffe</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$0.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/tea-3692500_1280.jpg" alt="matcha-tea">
+            <figcaption>
+                <p class="beverage-name" data-price="1.99" data-id="1" data-category="snack">Green Tea</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    <p class="empty">$</p>
+                    </div>
+                <p class="desc">Light, earthy tea made from unoxidized leaves</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$0.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/berries-1846085_1280.jpg" alt="yogurt">
+            <figcaption>
+                <p class="beverage-name" data-price="1.99" data-id="1" data-category="snack">Yogurt</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    </div>
+                <p class="desc">Creamy, tangy dairy product made by fermenting milk with bacteria</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$2.99</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/Assets/food-2784025_1280.jpg" alt="ice-cream">
+            <figcaption>
+                <p class="beverage-name" data-price="1.99" data-id="1" data-category="snack">Ice Cream</p>
+                    <div class="price-level">
+                        <p class="filled">$</p>
+                    <p class="filled">$</p>
+                    <p class="empty">$</p>
+                    </div>
+                <p class="desc">Frozen dessert made from cream, sugar, and flavorings</p>
+                    <button onclick="updateQuantity(this)">-</button>
+                    <input class="quantity-input" type="text" value="0" readonly>
+                    <button onclick="updateQuantity(this)">+</button>                
+                <p class="price">$1.99</p>
+            </figcaption>
+        </figure>
+    </div>
+</body>
+
+<footer>
+    <p>&#169; 2024 F&B Company. All rights reserved.</p>
+</footer>
+</html>

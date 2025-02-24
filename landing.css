@@ -1,0 +1,100 @@
+body {
+    width: 100%;
+    height: auto;
+    background-image: url(/Assets/resort-4471852_1920.jpg);
+    object-fit: scale-down;
+}
+
+.continent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 20px black;
+    width: 30%;
+    height: 64%;
+    transition: all ease-in-out 0.4s;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgb(234, 253, 253);
+}
+
+.content {
+    border: 1px solid black;
+    height: 100%;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.main-box {
+    max-width: 90%;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: sans-serif, Arial;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 13px 0px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.forget {
+    height: auto;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+
+.forget:hover {
+    text-decoration: underline;
+}
+
+.inner-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    padding: 12px 27px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(95, 179, 11);
+    margin-top: 18px;
+    transition: all 0.15s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+button> a {
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
